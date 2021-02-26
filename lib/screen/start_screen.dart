@@ -1,4 +1,5 @@
 import 'package:Lesson2/screen/counterdemo_screen.dart';
+import 'package:Lesson2/screen/formdemo_screen.dart';
 import 'package:Lesson2/screen/listdemo_screen.dart';
 import 'package:Lesson2/screen/listevent_screen.dart';
 import 'package:Lesson2/screen/widgetlifecycle_screen.dart';
@@ -28,6 +29,10 @@ class StartScreen extends StatelessWidget{
           RaisedButton(
             onPressed: () => Navigator.pushNamed(context, ListEventScreen.routeName), 
             child: Text("List Event Demo", style: Theme.of(context).textTheme.headline5),
+          ),
+          RaisedButton(
+            onPressed: () => Navigator.pushNamed(context, FormDemoScreen.routeName), 
+            child: Text("Form Demo", style: Theme.of(context).textTheme.headline5),
           ),
         ],
       )
